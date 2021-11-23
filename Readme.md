@@ -25,9 +25,9 @@ Comments by applicant Wilson Siringoringo 23/11/2021
 3. To achieve a degree of vertical separation of concerns, a data access class "PeopleRepository" is introduced. Which allows the controller class (PeopleController) to implement business logic at a higher level of abstraction.
 4. No attempt has been made to secure the APIs, as there is no such requirement on the specifications
 5. REST APIs are invoked as follows:
-    List all persons in the repository: GET <base URI>/people
-    Search persons by name: GET <base URI>/people/<search text>
-    Add a new person record to the repository: POST <base URI>/people {JSON data}
-    Modify existing person record: PUT <base URI>/people/<person ID> {JSON data}
-    Delete existing person record: DELETE <base URI>/people/<person ID>
+- List all persons in the repository: GET {base URI}/people
+- Search persons by name: GET {base URI}/people/{search text}
+- Add a new person record to the repository: POST {base URI}/people {JSON data}
+- Modify existing person record: PUT {base URI}/people/<person ID> {JSON data}
+- Delete existing person record: DELETE {base URI}/people/{person ID}
 ******************************************************************************************
